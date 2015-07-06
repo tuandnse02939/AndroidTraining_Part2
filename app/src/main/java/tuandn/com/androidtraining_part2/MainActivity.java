@@ -55,14 +55,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigate(mNavItemId);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 
     private void navigate(final int itemId) {
@@ -101,9 +101,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (item.getItemId() == android.support.v7.appcompat.R.id.home) {
             return mDrawerToggle.onOptionsItemSelected(item);
         }
-        View v= new View(getApplicationContext());
-        Snackbar.make(v, item.getTitle() + " clicked", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();
         return super.onOptionsItemSelected(item);
     }
 
