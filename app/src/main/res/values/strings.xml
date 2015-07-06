@@ -3,17 +3,14 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="item_1">Spring</string>
+    <string name="item_2">Summer</string>
+    <string name="item_3">Fall</string>
+    <string name="item_4">Winter</string>
+    <string name="nav_header_text">Food everyday</string>
 
 
-    <!-- Nav Drawer Menu Items -->
-    <string-array name="nav_drawer_items">
-        <item>Profile</item>
-        <item>Find Promotion Trip</item>
-        <item>Promotion Trip</item>
-        <item>Favorite Driver</item>
-        <item>Trip History</item>
-        <item>Support</item>
-        <item>About</item>
-        <item>Logout</item>
-    </string-array>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
 </resources>
