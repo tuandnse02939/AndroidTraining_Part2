@@ -1,5 +1,6 @@
 package tuandn.com.androidtraining_part2;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -75,8 +77,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         menuItem.setChecked(true);
         mNavItemId = menuItem.getItemId();
 
+        Intent i = new Intent(MainActivity.this,FloatingLabelActivity.class);
+        startActivity(i);
+
+        switch (mNavItemId){
+            case 1:
+                Intent i2 = new Intent(MainActivity.this,FloatingLabelActivity.class);
+                startActivity(i2);
+        }
         View v= new View(MainActivity.this);
         Snackbar.make(findViewById(R.id.content), menuItem.getTitle() + " clicked", Snackbar.LENGTH_LONG)
+                .setAction("Yes", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getApplication(),"1000",Toast.LENGTH_LONG).show();
+                    }
+                })
                 .show();
         // allow some time after closing the drawer before performing real navigation
         // so the user can see what is happening
