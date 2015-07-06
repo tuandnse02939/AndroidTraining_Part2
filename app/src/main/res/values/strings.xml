@@ -8,6 +8,9 @@
     <string name="item_3">Fall</string>
     <string name="item_4">Winter</string>
     <string name="nav_header_text">Food everyday</string>
+    <string name="early">Early</string>
+    <string name="later">Later</string>
+    <string name="other">Other</string>
 
 
     <string name="open">Open</string>

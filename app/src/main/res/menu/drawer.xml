@@ -3,7 +3,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/drawer_item_1"
-            android:icon="@drawable/spring_icon"
+            android:icon="@mipmap/ic_launcher"
             android:title="@string/item_1"/>
         <item
             android:id="@+id/drawer_item_2"
@@ -17,5 +17,20 @@
             android:id="@+id/drawer_item_4"
             android:icon="@drawable/winter_icon"
             android:title="@string/item_4"/>
+        <item
+            android:id="@+id/section"
+            android:title="@string/other">
+            <menu>
+                <item
+                    android:id="@+id/drawer_favourite"
+                    android:icon="@mipmap/ic_launcher"
+                    android:title="@string/early"/>
+
+                <item
+                    android:id="@+id/drawer_downloaded"
+                    android:icon="@mipmap/ic_launcher"
+                    android:title="@string/later"/>
+            </menu>
+        </item>
     </group>
 </menu>
