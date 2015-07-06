@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AndroidTraining_Part2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Profile</item>
+        <item>Find Promotion Trip</item>
+        <item>Promotion Trip</item>
+        <item>Favorite Driver</item>
+        <item>Trip History</item>
+        <item>Support</item>
+        <item>About</item>
+        <item>Logout</item>
+    </string-array>
+</resources>
