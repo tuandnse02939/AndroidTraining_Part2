@@ -18,6 +18,10 @@
             android:icon="@drawable/winter_icon"
             android:title="@string/item_4"/>
         <item
+            android:id="@+id/drawer_item_5"
+            android:icon="@drawable/winter_icon"
+            android:title="@string/item_5"/>
+        <item
             android:id="@+id/section"
             android:title="@string/other">
             <menu>

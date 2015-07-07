@@ -20,6 +20,8 @@
             android:label="Demo Floating Label"></activity>
         <activity android:name=".FloatingButtonActivity"
             android:label="Demo Floating Button"></activity>
+        <activity android:name=".Coordinator_1Activity"
+            android:label="Demo Coordinator 1"></activity>
     </application>
 
 </manifest>
