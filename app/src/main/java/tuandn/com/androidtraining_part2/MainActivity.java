@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
     private int mNavItemId;
+    private Intent i;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -54,21 +55,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.close);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
-
-        navigate(mNavItemId);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
-
-    private void navigate(final int itemId) {
-        // perform the actual navigation logic, updating the main content fragment etc
     }
 
     @Override
@@ -76,14 +62,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // update highlighted item in the navigation menu
         menuItem.setChecked(true);
         mNavItemId = menuItem.getItemId();
-
-        Intent i = new Intent(MainActivity.this,FloatingLabelActivity.class);
-        startActivity(i);
+//        Toast.makeText(getApplicationContext(),""+mNavItemId,Toast.LENGTH_LONG).show();
 
         switch (mNavItemId){
-            case 1:
-                Intent i2 = new Intent(MainActivity.this,FloatingLabelActivity.class);
-                startActivity(i2);
+            case 2131492988:
+                i = new Intent(MainActivity.this,FloatingLabelActivity.class);
+                startActivity(i);
+                break;
+            case 2131492989:
+                i = new Intent(MainActivity.this,FloatingLabelActivity.class);
+                startActivity(i);
+                break;
+            case 2131492990:
+                i = new Intent(MainActivity.this,FloatingButtonActivity.class);
+                startActivity(i);
+                break;
+            case 2131492991:
+                i = new Intent(MainActivity.this,FloatingLabelActivity.class);
+                startActivity(i);
+                break;
         }
         View v= new View(MainActivity.this);
         Snackbar.make(findViewById(R.id.content), menuItem.getTitle() + " clicked", Snackbar.LENGTH_LONG)
@@ -97,12 +94,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // allow some time after closing the drawer before performing real navigation
         // so the user can see what is happening
         mDrawerLayout.closeDrawer(GravityCompat.START);
-        mDrawerActionHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                navigate(menuItem.getItemId());
-            }
-        }, DRAWER_CLOSE_DELAY_MS);
         return true;
     }
 

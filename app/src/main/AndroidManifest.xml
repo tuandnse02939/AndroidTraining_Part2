@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".FloatingLabelActivity"
-            android:label="Test Floating Label"></activity>
+            android:label="Demo Floating Label"></activity>
+        <activity android:name=".FloatingButtonActivity"
+            android:label="Demo Floating Button"></activity>
     </application>
 
 </manifest>
