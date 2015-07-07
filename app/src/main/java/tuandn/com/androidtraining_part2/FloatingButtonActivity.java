@@ -10,7 +10,7 @@ import android.widget.Toast;
 /**
  * Created by Anh Trung on 7/7/2015.
  */
-public class FloatingButtonActivity extends Activity {
+public class FloatingButtonActivity extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

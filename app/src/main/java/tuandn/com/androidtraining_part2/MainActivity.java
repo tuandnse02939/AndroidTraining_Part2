@@ -62,22 +62,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // update highlighted item in the navigation menu
         menuItem.setChecked(true);
         mNavItemId = menuItem.getItemId();
-//        Toast.makeText(getApplicationContext(),""+mNavItemId,Toast.LENGTH_LONG).show();
 
         switch (mNavItemId){
-            case 2131492988:
+            case R.id.drawer_item_1:
                 i = new Intent(MainActivity.this,FloatingLabelActivity.class);
                 startActivity(i);
                 break;
-            case 2131492989:
+            case R.id.drawer_item_2:
                 i = new Intent(MainActivity.this,FloatingLabelActivity.class);
                 startActivity(i);
                 break;
-            case 2131492990:
+            case R.id.drawer_item_3:
                 i = new Intent(MainActivity.this,FloatingButtonActivity.class);
                 startActivity(i);
                 break;
-            case 2131492991:
+            case R.id.drawer_item_4:
                 i = new Intent(MainActivity.this,FloatingLabelActivity.class);
                 startActivity(i);
                 break;

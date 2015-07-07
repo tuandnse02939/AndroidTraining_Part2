@@ -6,7 +6,7 @@ import android.os.Bundle;
 /**
  * Created by Anh Trung on 7/6/2015.
  */
-public class FloatingLabelActivity extends Activity{
+public class FloatingLabelActivity extends MainActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
