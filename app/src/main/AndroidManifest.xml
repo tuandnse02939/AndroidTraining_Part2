@@ -17,13 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".FloatingLabelActivity"
-            android:label="Demo Floating Label"></activity>
+            android:label="Demo Floating Label"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".FloatingButtonActivity"
-            android:label="Demo Floating Button"></activity>
+            android:label="Demo Floating Button"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".Coordinator_1Activity"
-            android:label="Demo Coordinator 1"></activity>
+            android:label="Demo Coordinator"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".CollapsingToolbarActivity"
-            android:label="Demo CollapsingToolbar"></activity>
+            android:label="Demo CollapsingToolbar"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
