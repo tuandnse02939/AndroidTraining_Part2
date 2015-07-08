@@ -24,7 +24,7 @@
         <item
             android:id="@+id/drawer_item_6"
             android:icon="@drawable/winter_icon"
-            android:title="@string/item_5"/>
+            android:title="@string/item_6"/>
         <item
             android:id="@+id/section"
             android:title="@string/other">

@@ -27,19 +27,7 @@ public class Coordinator_1Activity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
                 Coordinator_1Activity.this));
-//        if (viewPager != null) {
-//            setupViewPager(viewPager);
-//        }
-
         tabLayout.setupWithViewPager(viewPager);
-
     }
 
-    private void setupViewPager(ViewPager viewPager) {
-//        SampleFragmentPagerAdapter adapter = new SampleFragmentPagerAdapter(getSupportFragmentManager());
-//        adapter.addFragment(new SeasonFrament(), "Category 1");
-//        adapter.addFragment(new CheeseListFragment(), "Category 2");
-//        adapter.addFragment(new CheeseListFragment(), "Category 3");
-//        viewPager.setAdapter(adapter);
-    }
 }
