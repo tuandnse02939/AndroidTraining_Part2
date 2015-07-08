@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import tuandn.com.androidtraining_part2.PageFragment;
+import Fragment.PageFragment;
 
 /**
  * Created by Anh Trung on 7/7/2015.

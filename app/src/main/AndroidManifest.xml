@@ -22,6 +22,8 @@
             android:label="Demo Floating Button"></activity>
         <activity android:name=".Coordinator_1Activity"
             android:label="Demo Coordinator 1"></activity>
+        <activity android:name=".CollapsingToolbarActivity"
+            android:label="Demo CollapsingToolbar"></activity>
     </application>
 
 </manifest>
