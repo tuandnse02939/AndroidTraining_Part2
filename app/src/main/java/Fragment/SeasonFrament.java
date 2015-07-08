@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import Adapter.SeasonAdapter;
 import tuandn.com.androidtraining_part2.R;
 
 /**
@@ -25,9 +24,6 @@ public class SeasonFrament extends Fragment {
 
     private void setupRecyclerView(RecyclerView recyclerView){
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
-
-//        SeasonAdapter adapter = new SeasonAdapter(SeasonFrament.this);
-//        recyclerView.setAdapter(SeasonAdapter new SeasonAdapter(getS));
     }
 
 

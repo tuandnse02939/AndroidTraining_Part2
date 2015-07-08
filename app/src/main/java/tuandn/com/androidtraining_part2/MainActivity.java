@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(i);
                 break;
             case R.id.drawer_item_5:
-                i = new Intent(MainActivity.this,FloatingLabelActivity.class);
+                i = new Intent(MainActivity.this,Coordinator_1Activity.class);
                 startActivity(i);
                 break;
         }

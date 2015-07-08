@@ -6,8 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import Adapter.SeasonAdapter;
-import Fragment.SeasonFrament;
+import Adapter.SampleFragmentPagerAdapter;
 
 /**
  * Created by Anh Trung on 7/7/2015.
@@ -26,19 +25,21 @@ public class Coordinator_1Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        if (viewPager != null) {
-            setupViewPager(viewPager);
-        }
+        viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
+                Coordinator_1Activity.this));
+//        if (viewPager != null) {
+//            setupViewPager(viewPager);
+//        }
 
         tabLayout.setupWithViewPager(viewPager);
 
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        SeasonAdapter adapter = new SeasonAdapter(getSupportFragmentManager());
+//        SampleFragmentPagerAdapter adapter = new SampleFragmentPagerAdapter(getSupportFragmentManager());
 //        adapter.addFragment(new SeasonFrament(), "Category 1");
 //        adapter.addFragment(new CheeseListFragment(), "Category 2");
 //        adapter.addFragment(new CheeseListFragment(), "Category 3");
-        viewPager.setAdapter(adapter);
+//        viewPager.setAdapter(adapter);
     }
 }
