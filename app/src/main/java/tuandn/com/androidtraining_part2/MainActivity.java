@@ -80,6 +80,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 i = new Intent(MainActivity.this,FloatingLabelActivity.class);
                 startActivity(i);
                 break;
+            case R.id.drawer_item_5:
+                i = new Intent(MainActivity.this,Coordinator_1Activity.class);
+                startActivity(i);
+                break;
         }
         View v= new View(MainActivity.this);
         Snackbar.make(findViewById(R.id.content), menuItem.getTitle() + " clicked", Snackbar.LENGTH_LONG)

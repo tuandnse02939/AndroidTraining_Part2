@@ -6,7 +6,8 @@
     <string name="item_1">Home</string>
     <string name="item_2">Floating Labels</string>
     <string name="item_3">FloatingButton and SnackBar</string>
-    <string name="item_4">Winter</string>
+    <string name="item_4">Tabs Activity</string>
+    <string name="item_5">Coordinator 1</string>
     <string name="nav_header_text">Demo for life</string>
     <string name="early">Early</string>
     <string name="later">Later</string>
