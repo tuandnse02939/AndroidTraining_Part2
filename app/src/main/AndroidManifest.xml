@@ -16,9 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Coordinator_1Activity"
-            android:label="Demo Coordinator"
-            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".CollapsingToolbarActivity"
             android:label="Demo CollapsingToolbar"
             android:parentActivityName=".MainActivity"></activity>
