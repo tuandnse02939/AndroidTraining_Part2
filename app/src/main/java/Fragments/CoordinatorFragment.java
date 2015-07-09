@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,12 +20,11 @@ public class CoordinatorFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.coordinator_1, container, false);
+        return inflater.inflate(R.layout.fragment_coordinator, container, false);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        Toolbar toolbar = (Toolbar) getView().findViewById(R.id.toolbar);
         TabLayout tabLayout = (TabLayout) getView().findViewById(R.id.tabs);
         ViewPager viewPager = (ViewPager) getView().findViewById(R.id.viewpager);
         viewPager.setAdapter(new SampleFragmentPagerAdapter(getActivity().getSupportFragmentManager(),
