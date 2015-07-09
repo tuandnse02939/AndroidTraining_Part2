@@ -16,12 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FloatingLabelActivity"
-            android:label="Demo Floating Label"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".FloatingButtonActivity"
-            android:label="Demo Floating Button"
-            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".Coordinator_1Activity"
             android:label="Demo Coordinator"
             android:parentActivityName=".MainActivity"></activity>

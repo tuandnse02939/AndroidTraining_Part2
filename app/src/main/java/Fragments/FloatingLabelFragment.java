@@ -1,37 +1,39 @@
-package tuandn.com.androidtraining_part2;
+package Fragments;
 
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
+
+import tuandn.com.androidtraining_part2.R;
 
 /**
- * Created by Anh Trung on 7/6/2015.
+ * Created by Anh Trung on 7/9/2015.
  */
-public class FloatingLabelActivity extends MainActivity{
-
+public class FloatingLabelFragment extends Fragment {
+    private static final String TAG = "MyActivity";
     private EditText username,password;
     TextInputLayout layoutUsername, layoutPassword;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_floating_label);
-
-        layoutUsername = (TextInputLayout) findViewById(R.id.layout_username);
-        layoutPassword = (TextInputLayout) findViewById(R.id.layout_password);
-
-        init();
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_floating_label, container, false);
     }
 
-    private void init() {
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        layoutUsername = (TextInputLayout) getView().findViewById(R.id.layout_username);
+        layoutPassword = (TextInputLayout) getView().findViewById(R.id.layout_password);
+
+        username = (EditText) getView().findViewById(R.id.username);
+        password = (EditText) getView().findViewById(R.id.password);
 
         username.addTextChangedListener(new TextWatcher() {
             @Override
@@ -76,5 +78,7 @@ public class FloatingLabelActivity extends MainActivity{
 
             }
         });
+        super.onActivityCreated(savedInstanceState);
     }
+
 }
