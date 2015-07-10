@@ -35,6 +35,12 @@ public class FloatingLabelFragment extends Fragment {
         username = (EditText) getView().findViewById(R.id.username);
         password = (EditText) getView().findViewById(R.id.password);
 
+        layoutUsername.setError(null);
+        layoutPassword.setError(null);
+
+        username.setText(null);
+        password.setText(null);
+
         username.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

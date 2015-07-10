@@ -33,7 +33,7 @@ public class FloatingButtonFragment extends Fragment {
                         .setAction("Yes", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(getActivity(), "1000", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getActivity(), "Hello World!", Toast.LENGTH_LONG).show();
                             }
                         })
                         .show();
