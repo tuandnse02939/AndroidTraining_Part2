@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.Toast;
 
 import tuandn.com.androidtraining_part2.R;
@@ -39,6 +40,27 @@ public class FloatingButtonFragment extends Fragment {
                         .show();
             }
         });
+
+        final CheckBox checkBox = (CheckBox) getView().findViewById(R.id.checkbox);
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "OK", Snackbar.LENGTH_LONG)
+                        .setAction("Undo", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                if(checkBox.isChecked()) {
+                                    checkBox.setChecked(false);
+                                }
+                                else{
+                                    checkBox.setChecked(true);
+                                }
+                            }
+                        })
+                        .show();
+            }
+        });
+
         super.onActivityCreated(savedInstanceState);
     }
 
